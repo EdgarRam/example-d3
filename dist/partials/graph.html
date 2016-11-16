@@ -1,0 +1,5 @@
+
+<div class="btn btn-primary" ng-click="nGraphic = false">Graphic for day</div>
+<div class="btn btn-primary" ng-click="nGraphic = true">Summary graphic</div>
+<nvd3 options="options" data="data" ng-show="!nGraphic"></nvd3>
+<nvd3 options="options2" data="data2" ng-show="nGraphic"></nvd3>

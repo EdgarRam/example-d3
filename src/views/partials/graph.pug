@@ -1,0 +1,13 @@
+div.btn.btn-primary(ng-click='nGraphic = false') Graphic for day
+div.btn.btn-primary(ng-click='nGraphic = true') Summary graphic
+
+nvd3(
+    options='options'
+    data='data'
+    ng-show='!nGraphic'
+)
+nvd3(
+    options='options2'
+    data='data2'
+    ng-show='nGraphic'
+)
